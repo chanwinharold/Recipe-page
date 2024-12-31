@@ -8,47 +8,42 @@
     <title>Dev#1</title>
 </head>
 <body>
-    <header>
-        <img src="assets/img/image/image-omelette.jpeg" alt="image-omelette">
-        <h1>Simple Omelette Recipe</h1>
-        <p>
-            An easy and quick dish, perfect for any meal.
-            This classic omelette combines beaten eggs cooked
-            to perfection, optionally filled with your choice
-            of cheese, vegetables or meats.
-        </p>
-    </header>
+    <div>
+        <header class="head">
+            <img class="head__image" src="assets/img/image/image-omelette.jpeg" alt="image-omelette">
+            <h1 class="head__title">Simple Omelette Recipe</h1>
+            <p class="head__content">
+                An easy and quick dish, perfect for any meal.
+                This classic omelette combines beaten eggs cooked
+                to perfection, optionally filled with your choice
+                of cheese, vegetables or meats.
+            </p>
+        </header>
 
-    <main>
-
-        <section class="preparation_time">
-            <h1>Preparation time</h1>
-            <nav>
-                <ul class="list_time">
+        <main class="main">
+            <section class="main__preparation">
+                <h2 class="main__preparation__title">Preparation time</h2>
+                <ul class="main__preparation__list">
                     <li><span>Total:</span> Approximately 10 minutes</li>
                     <li><span>Preparation:</span> 5 minutes</li>
                     <li><span>Cooking:</span> 5 minutes</li>
                 </ul>
-            </nav>
-        </section>
+            </section>
 
-        <section class="ingredients">
-            <h1>Ingredients</h1>
-            <nav>
-                <ul>
+            <section class="main__ingredients">
+                <h2 class="main__ingredients__title">Ingredients</h2>
+                <ul class="main__ingredients__list">
                     <li>2-3 large eggs</li>
                     <li>Salt, to taste</li>
                     <li>Pepper, to taste</li>
                     <li>1 tablespoon of butter or oil</li>
                     <li>optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
                 </ul>
-            </nav>
-        </section>
+            </section>
 
-        <section class="instructions">
-            <h1>Instructions</h1>
-            <nav>
-                <ol>
+            <section class="main__instructions">
+                <h2 class="main__instructions__title">Instructions</h2>
+                <ol class="main__instructions__list">
                     <li><span>Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.You can add a tablespoon of water or milk for a flutter texture.</li>
                     <li><span>Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
                     <li><span>Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
@@ -56,33 +51,31 @@
                     <li><span>Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
                     <li><span>Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
                 </ol>
-            </nav>
-        </section>
+            </section>
 
-        <section class="nutrition">
-            <h1>Nutrition</h1>
-            <p>The table below shows nutritional values per serving without the additional fillings.</p>
-            <table>
-                <tr>
-                    <td class="substances line">Calories</td>
-                    <td class="qty line">277kcal</td>
-                </tr>
-                <tr>
-                    <td class="substances line">Carbs</td>
-                    <td class="qty line">0g</td>
-                </tr>
-                <tr>
-                    <td class="substances line">Protein</td>
-                    <td class="qty line">20g</td>
-                </tr>
-                <tr>
-                    <td class="substances">Fat</td>
-                    <td class="qty">22g</td>
-                </tr>
-            </table>
-        </section>
-
-    </main>
-
+            <section class="main__nutrition">
+                <h2 class="main__nutrition__title">Nutrition</h2>
+                <p class="main__nutrition__caption">The table below shows nutritional values per serving without the additional fillings.</p>
+                <table class="main__nutrition__table">
+                    <tr>
+                        <td class="line nutrient">Calories</td>
+                        <td class="line value">277kcal</td>
+                    </tr>
+                    <tr>
+                        <td class="line nutrient">Carbs</td>
+                        <td class="line value">0g</td>
+                    </tr>
+                    <tr>
+                        <td class="line nutrient">Protein</td>
+                        <td class="line value">20g</td>
+                    </tr>
+                    <tr>
+                        <td class="nutrient">Fat</td>
+                        <td class="value">22g</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+    </div>
 </body>
 </html>

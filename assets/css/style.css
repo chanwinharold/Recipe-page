@@ -1,68 +1,116 @@
-html{
-    background-color: #f3e5d8;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-body{
-    background-color: #fff7fc;
-    min-width: 300px;
-    max-width: 768px;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    line-height: 25px;
-    color: #595554;
-    padding: 20px;
-    margin: 30px;
-    border-radius: 20px;
-}
-img{
-    width: 100%;
-    border-radius: 10px;
-}
-header h1{
-    color: #31302c;
-}
-.preparation_time h1{
-    color: #61213c;
-    font-size: 1em;
-}
-.ingredients h1, .instructions h1, .nutrition h1, .qty {
-    color: #844b3a;
-}
-ol::marker, ul::marker{
-    color: #844b3a;
-    font-weight: bold;
-}
-.qty{
-    font-weight: bold;
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
 }
 
-li{
-    padding-left: 15px;
+body {
+  font-size: 1em;
+  font-family: Afacad Flux, Montserrat, sans-serif;
+  background-color: #f3e5d8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-tr, td {
-    width: 100%;
-    text-align: justify;
+
+div {
+  max-width: 600px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 30px;
 }
-table{
-    border-collapse: collapse;
-    max-width: 100%;
-    margin: 30px;
+
+.head__image {
+  width: 100%;
+  border-radius: 10px;
 }
-table td{
-    padding-top: 20px;
+.head__title {
+  font-size: 2.5em;
 }
-nav span{
-    font-weight: bold;
+.head__content {
+  margin-top: 10px;
 }
-.line{
-    border-bottom: 1px solid #e0e0e0;
+
+.main__preparation {
+  background-color: rgba(243, 229, 216, 0.5);
+  padding: 15px 30px 15px 30px;
+  border-radius: 10px;
+  margin-top: 30px;
 }
-.substances{
-    padding-left: 25px;
+.main__preparation__title {
+  color: #7e3352;
+  font-size: 1.3em;
 }
+.main__preparation__list {
+  line-height: 1.5rem;
+  padding: 0 20px 0 20px;
+}
+.main__preparation__list span {
+  font-weight: bold;
+  padding-left: 20px;
+}
+.main__preparation li::marker {
+  color: #83493d;
+  font-weight: bold;
+}
+.main__ingredients {
+  margin-top: 30px;
+}
+.main__ingredients__title {
+  margin-bottom: 10px;
+  color: #83493d;
+}
+.main__ingredients__list {
+  line-height: 1.5rem;
+  padding: 0 20px 0 20px;
+}
+.main__ingredients__list li {
+  padding-left: 20px;
+}
+.main__ingredients__list li::marker {
+  color: #83493d;
+  font-weight: bold;
+}
+.main__instructions {
+  margin-top: 30px;
+}
+.main__instructions__title {
+  margin-bottom: 10px;
+  color: #83493d;
+}
+.main__instructions__list {
+  line-height: 1.5rem;
+  padding: 0 20px 0 20px;
+}
+.main__instructions__list li {
+  padding-left: 20px;
+}
+.main__instructions__list li::marker {
+  color: #83493d;
+  font-weight: bold;
+}
+.main__instructions__list span {
+  font-weight: bold;
+}
+.main__nutrition {
+  margin-top: 30px;
+}
+.main__nutrition__title {
+  margin-bottom: 10px;
+  color: #83493d;
+}
+.main__nutrition__table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+.main__nutrition__table .line {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.main__nutrition__table .nutrient, .main__nutrition__table .value {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
