@@ -11,12 +11,14 @@ body {
     font-family: Afacad Flux, Montserrat, sans-serif;
     background-color: #f3e5d8;
 
-    min-height: 100vh;
+    min-height: 250vh;
     display: grid;
+    place-content: center;
     place-items: center;
 }
 
 div {
+    place-self: center;
     max-width: 600px;
     background-color: white;
     border-radius: $radius;
