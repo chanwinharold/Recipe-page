@@ -8,26 +8,40 @@ body {
   font-family: Afacad Flux, Montserrat, sans-serif;
   background-color: #f3e5d8;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
 }
 
 div {
   max-width: 600px;
   background-color: white;
   border-radius: 10px;
-  margin: 30px;
-  padding: 30px;
+  padding: 2rem;
+}
+@media screen and (max-width: 28rem) {
+  div {
+    padding: 1rem;
+    border-radius: 0;
+    min-height: 100%;
+  }
 }
 
 .head__image {
-  width: 100%;
+  max-width: 100%;
   border-radius: 10px;
+}
+@media screen and (max-width: 28rem) {
+  .head__image {
+    margin-top: 1rem;
+  }
 }
 .head__title {
   font-size: 2.5em;
+}
+@media screen and (max-width: 28rem) {
+  .head__title {
+    font-size: 1.6rem;
+  }
 }
 .head__content {
   margin-top: 10px;
@@ -35,9 +49,14 @@ div {
 
 .main__preparation {
   background-color: rgba(243, 229, 216, 0.5);
-  padding: 15px 30px 15px 30px;
   border-radius: 10px;
   margin-top: 30px;
+  padding: 15px 30px;
+}
+@media screen and (max-width: 28rem) {
+  .main__preparation {
+    padding-inline: 15px;
+  }
 }
 .main__preparation__title {
   color: #7e3352;
@@ -45,11 +64,9 @@ div {
 }
 .main__preparation__list {
   line-height: 1.5rem;
-  padding: 0 20px 0 20px;
 }
 .main__preparation__list span {
   font-weight: bold;
-  padding-left: 20px;
 }
 .main__preparation li::marker {
   color: #83493d;
@@ -111,6 +128,12 @@ div {
 }
 .main__nutrition__table .nutrient, .main__nutrition__table .value {
   padding: 10px;
+}
+
+@media screen and (max-width: 28rem) {
+  li {
+    padding-left: 5px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

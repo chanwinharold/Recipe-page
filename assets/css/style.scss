@@ -12,28 +12,37 @@ body {
     background-color: #f3e5d8;
 
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
 }
 
 div {
     max-width: 600px;
     background-color: white;
     border-radius: $radius;
-    margin: 30px;
-    padding: 30px;
+    padding: 2rem;
+
+    @media screen and (max-width:28rem) {
+        padding: 1rem;
+        border-radius: 0;
+        min-height: 100%;
+    }
 }
 
 .head {
     &__image {
-        width: 100%;
+        max-width: 100%;
         border-radius: $radius;
+
+        @media screen and (max-width:28rem) {
+            margin-top: 1rem;
+        }
     }
     &__title {
         font-size: 2.5em;
-
+        @media screen and (max-width:28rem) {
+            font-size: 1.6rem;
+        }
     }
     &__content {
         margin-top: 10px;
@@ -43,19 +52,20 @@ div {
 .main {
     &__preparation {
         background-color: rgba(243, 229, 216, 0.5);
-        padding: 15px 30px 15px 30px;
         border-radius: $radius;
         margin-top: 30px;
+
+        padding: 15px 30px;
+        @media screen and (max-width:28rem) { padding-inline: 15px; }
+
         &__title {
             color: #7e3352;
             font-size: 1.3em;
         }
         &__list {
             line-height: $l-height;
-            padding: 0 20px 0 20px;
             & span {
                 font-weight: bold;
-                padding-left: 20px;
             }
         }
         & li::marker {
@@ -121,6 +131,12 @@ div {
                 padding: 10px;
             }
         }
+    }
+}
+
+li {
+    @media screen and (max-width:28rem) {
+        padding-left: 5px !important;
     }
 }
 
